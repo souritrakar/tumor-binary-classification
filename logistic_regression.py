@@ -31,5 +31,5 @@ class LogisticRegression:
         pred_class = ["benign" if i>0.5 else "malignant" for i in y_predicted]
         return pred_class
 
-    def sigmoid(self,x):
+    def _sigmoid(self,x):
         return (1/ (1+np.exp(-x)))
